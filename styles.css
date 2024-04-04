@@ -279,15 +279,17 @@ a:hover {
   color:#1E1E2A
 }
 
-.typing {
-  width: 285px;
-  animation: typing 10s steps(22), blink .5s step-end infinite alternate;
-
-  white-space: nowrap;
+.typing-container {
   overflow: hidden;
+  white-space: nowrap;
+}
+
+.typing {
+  display: inline-block;
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+  animation: typing 10s steps(22), blink .5s step-end infinite alternate;
 }
 
 @keyframes typing {
