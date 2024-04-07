@@ -4,12 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var index = 0;
   
     function typeLetter() {
-      typingDiv.textContent += message[index++];
       if (index < message.length) {
-        setTimeout(typeLetter, Math.random() * 150); // Adjust the typing speed here
+        typingDiv.textContent += message[index++];
+        setTimeout(typeLetter, Math.random() * 100); // Adjust the typing speed here
       }
     }
   
     typeLetter();
   });
-  
